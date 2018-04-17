@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--The following displays language used in browser to interpret page -->
+	<meta charset="UTF-8"><!--The following line of code displays the page title on a browser tab -->
+<style>
+    dim{opacity:1}
+    .dim,
+    .dim:focus,
+    .dim:hover{transition:opacity .15s ease-in}
+    .dim:focus,
+    .dim:hover{opacity:.5}
+    .dim:active{opacity:.8;transition:opacity .15s ease-out}
+    .link{text-decoration:none}
+    .mngreen{
+        color: #5a9e5c
+    }
+    </style>
+    </head>
+    
+<body>
+    
+<!------Attaches audio file to an id--------------->    
+    <audio id="audio_1">
+    <source src="audio/Hannah.mp3" type="audio/mpeg" />
+</audio>
+    
+<!------Sets up the link/text to click------------->
+    <a onClick="togglePlay()" class="mngreen link dim" href="#">listen here</a>
+    </body>
+</html>
+
+<!------Sets up click on, click off function------->
+    <script>
+    var myAudio = document.getElementById("audio_1");
+var isPlaying = false;
+
+function togglePlay() {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+    </script>
+
+<!----To prevent multiple audio files from playing simultaneously---->
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
