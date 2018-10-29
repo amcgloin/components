@@ -1,3 +1,11 @@
+ //**To apply to an SVG,  apply the selectors to the applicable text boxes, rectangles, or lines. 
+
+//**ie:
+//**<rect x="187" y="283.6" class="st4" width="35.4" height="504.9"/>
+//**Turns into 
+//**<rect id="1rect"  x="187" y="283.6" class="st4" width="35.4" height="504.9"/>
+ 
+ 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
