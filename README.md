@@ -9,15 +9,25 @@ To use, create a graph in Illustrator and save as an SVG. Copy the code from the
 <br><br> 
 The code will look like this: 
   
-  //**'<rect x="187" y="283"...' 
+  '''
+  <rect x="187" y="283"...
+  '''
   
- Add ids counting up so the code will look like this: //**"<rect id="column1" x="187" y="283"...,' the next one will be '#<rect id="column2" x="187" y="283"...,' and the next will have "#<rect id="column3" x="187" y="283"...' and so on.<br><br>
+ Add ids counting up so the code will look like this: 
+ 
+ '''
+ <rect id="column1" x="187" y="283"..., the next one will be 
+ <rect id="column2" x="187" y="283"..., and the next will be 
+ <rect id="column3" x="187" y="283"...' and so on.
+ '''
 
 <h4>To fade in and fade out text boxes and connecting lines</h4>
 
-Click on the live preview button on the top right of Brackets, and click inspect. A window will open up. Click the top-left button which looks like an arrow on a screen. Click on the text box or line you want to fade in and out. The code where that element is will be shown on the right, in the new window. Find that same code in Brackets, using Command+f will help, and assign the element the desired id. Either 
+Click on the live preview button on the top right of Brackets, and click inspect. A window will open up. Click the top-left button which looks like an arrow on a screen. Click on the text box or line you want to fade in and out. The code where that element is will be shown on the right, in the new window. Find that same code in Brackets, using Command+f will help, and assign the element the desired id: 
 
-<!---<g id="numbers1">' or //**<g id="line1">---->
+'''
+<g id="numbers1">' or //**<g id="line1">
+''''
   
   <br><br>
   Make sure paired lines and textboxes have a paired number in their id. In the example code, there is a paired line and textbox above columns two and four. Move the commands relating to the line and textbox to whichever column the box and line are above. Make sure to move  the commands in both mouseenter and mouseout.
