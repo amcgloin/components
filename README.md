@@ -16,9 +16,9 @@ The code will look like this:
  Add ids counting up so the code will look like this: 
  
  ```
- <rect id="column1" x="187" y="283"..., the next one will be 
- <rect id="column2" x="187" y="283"..., and the next will be 
- <rect id="column3" x="187" y="283"...' and so on.
+ <rect id="column1" x="187" y="283"...> the next one will be 
+ <rect id="column2" x="187" y="283"...> and the next will be 
+ <rect id="column3" x="187" y="283"...> and so on.
  ```
 
 <h4>To fade in and fade out text boxes and connecting lines</h4>
@@ -29,8 +29,6 @@ Click on the live preview button on the top right of Brackets, and click inspect
 <g id="numbers1">
 <g id="line1">
 ```
-  
-  <br><br>
   Make sure paired lines and textboxes have a paired number in their id. In the example code, there is a paired line and textbox above columns two and four. Move the commands relating to the line and textbox to whichever column the box and line are above. Make sure to move  the commands in both mouseenter and mouseout.
   <h4>To add a color change</h4>
     To add color changes, alter the hex codes on the backgroundColor command under mouseenter to whatever you want to color to change to on mouseover. It is currently set to Mustang News green, which is the default color for our graphs. The hexcode in mouseout reverts the color back to Mustang News green, if the color is changed. </p>
