@@ -1,13 +1,15 @@
- //**To apply to an SVG,  apply the selectors to the applicable text boxes, rectangles, or lines. 
+ //**To apply to an SVG,  apply the selectors to the applicable text boxes, rectangles, or lines.
+ //**The color change is optional, and is currently set at green, so there's no change. If color change is preferred, change the hex code on mouseenter to desired color
 
 //**ie:
 //**<rect x="187" y="283.6" class="st4" width="35.4" height="504.9"/>
 //**Turns into 
-//**<rect id="1rect"  x="187" y="283.6" class="st4" width="35.4" height="504.9"/>
+//**<rect id="rect1fade"  x="187" y="283.6" class="st4" width="35.4" height="504.9"/>
  
  
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
+     //**Fade effect on for text boxes on hover
         $(document).ready(function() {
             //**Fades all numbers on load of graph
             $("#numbers1").fadeTo(1000, 0.0);
@@ -34,179 +36,206 @@
             $("#line2").fadeTo(1000, 0.0);
             
             
-            //**First Column
+            //**First column
             
             //**Fades out first column, fades in number on mouseenter
-            $("#1rect").mouseenter(function() {
-                $("#1rect").fadeTo(1000, 0.4);
+            $("#column1").mouseenter(function() {
+                $("#column1").fadeTo(1000, 0.4);
                 $("#numbers1").fadeTo(1000, 1);
+                $("#column1").backgroundColor('#5E9F59')
             });
             //**Fades back first column, fades out number on exit
-            $("#1rect").mouseout(function() {
-                $("#1rect").fadeTo(1000, 1);
+            $("#column1").mouseout(function() {
+                $("#column1").fadeTo(1000, 1);
                 $("#numbers1").fadeTo(1000, 0);
+                $("#column1").backgroundColor('#5E9F59')
             });
             
-            //**Second Column
+            //**Second column
             //**Text boxes
             
             //**Fades out second column, fades in number on mouseenter
-            $("#2rect").mouseenter(function() {
-                $("#2rect").fadeTo(1000, 0.4);
+            $("#column2").mouseenter(function() {
+                $("#column2").fadeTo(1000, 0.4);
                 $("#textbox1").fadeTo(1000, 1);
                 $("#line1").fadeTo(1000, 1);
                 $("#numbers2").fadeTo(1000, 1);
+                $("#column2").backgroundColor('#5E9F59')
             });
              //**Fades back second column, fades out number on exit
-            $("#2rect").mouseout(function() {
-                $("#2rect").fadeTo(1000, 1);
+            $("#column2").mouseout(function() {
+                $("#column2").fadeTo(1000, 1);
                 $("#textbox1").fadeTo(1000, 0);
                 $("#line1").fadeTo(1000, 0);
                 $("#numbers2").fadeTo(1000, 0);
+                $("#column2").backgroundColor('#5E9F59')
             });
             
             //**Third Column
             
             //**Fades out third column, fades in number on mouseenter
-            $("#3rect").mouseenter(function() {
-                $("#3rect").fadeTo(1000, 0.4);
+            $("#column3").mouseenter(function() {
+                $("#column3").fadeTo(1000, 0.4);
                 $("#numbers3").fadeTo(1000, 1);
+                $("#column3").backgroundColor('#5E9F59')
             });
             //**Fades back third column, fades out number on exit
-            $("#3rect").mouseout(function() {
-                $("#3rect").fadeTo(1000, 1);
+            $("#column3").mouseout(function() {
+                $("#column3").fadeTo(1000, 1);
                 $("#numbers3").fadeTo(1000, 0);
+                $("#column3").backgroundColor('#5E9F59')
             });
             
             //**Fourth Column
             
             //**Fades out fourth column, fades in number on mouseenter
-            $("#4rect").mouseenter(function() {
-                $("#4rect").fadeTo(1000, 0.4);
+            $("#column4").mouseenter(function() {
+                $("#column4").fadeTo(1000, 0.4);
                 $("#numbers4").fadeTo(1000, 1);
+                $("#column4").backgroundColor('#5E9F59')
             });
             //**Fades back fourth column, fades out number on exit
-            $("#4rect").mouseout(function() {
-                $("#4rect").fadeTo(1000, 1);
+            $("#column4").mouseout(function() {
+                $("#column4").fadeTo(1000, 1);
                 $("#numbers4").fadeTo(1000, 0);
+                $("#column4").backgroundColor('#5E9F59')
             });
             
             //**Fifth Column
             
             //**Fades out fifth column, fades in number on mouseenter
-            $("#5rect").mouseenter(function() {
-                $("#5rect").fadeTo(1000, 0.4);
+            $("#column5").mouseenter(function() {
+                $("#column5").fadeTo(1000, 0.4);
                 $("#numbers5").fadeTo(1000, 1);
+                $("#column5").backgroundColor('#5E9F59')
             });
             //**Fades back fifth column, fades out number on exit
-            $("#5rect").mouseout(function() {
-                $("#5rect").fadeTo(1000, 1);
+            $("#column5").mouseout(function() {
+                $("#column5").fadeTo(1000, 1);
                 $("#numbers5").fadeTo(1000, 0);
+                $("#column5").backgroundColor('#5E9F59')
             });
             
             //**Sixth Column
             
             //**Fades out sixth column, fades in number on mouseenter
-            $("#6rect").mouseenter(function() {
-                $("#6rect").fadeTo(1000, 0.4);
+            $("#column6").mouseenter(function() {
+                $("#column6").fadeTo(1000, 0.4);
                 $("#numbers6").fadeTo(1000, 1);
+                $("#column6").backgroundColor('#5E9F59')
             });
             //**Fades back sixth column, fades out number on exit
-            $("#6rect").mouseout(function() {
-                $("#6rect").fadeTo(1000, 1);
+            $("#column6").mouseout(function() {
+                $("#column6").fadeTo(1000, 1);
                 $("#numbers6").fadeTo(1000, 0);
+                $("#column6").backgroundColor('#5E9F59')
             });
             
             //**Seventh Column
             
             //**Fades out seventh column, fades in number on mouseenter
-            $("#7rect").mouseenter(function() {
-                $("#7rect").fadeTo(1000, 0.4);
+            $("#column7").mouseenter(function() {
+                $("#column7").fadeTo(1000, 0.4);
                 $("#numbers7").fadeTo(1000, 1);
+                $("#column7").backgroundColor('#5E9F59')
             });
+            
             //**Fades back seventh column, fades out number on exit
-            $("#7rect").mouseout(function() {
-                $("#7rect").fadeTo(1000, 1);
+            $("#column7").mouseout(function() {
+                $("#column7").fadeTo(1000, 1);
                 $("#numbers7").fadeTo(1000, 0);
+                $("#column7").backgroundColor('#5E9F59')
             });
             
             //**Eigth Column
             
             //**Fades out eigth column, fades in number on mouseenter
-            $("#8rect").mouseenter(function() {
-                $("#8rect").fadeTo(1000, 0.4);
+            $("#column8").mouseenter(function() {
+                $("#column8").fadeTo(1000, 0.4);
                 $("#numbers8").fadeTo(1000, 1);
+                $("#column8").backgroundColor('#5E9F59')
             });
             //**Fades back eigth column, fades out number on exit
-            $("#8rect").mouseout(function() {
-                $("#8rect").fadeTo(1000, 1);
+            $("#column8").mouseout(function() {
+                $("#column8").fadeTo(1000, 1);
                 $("#numbers8").fadeTo(1000, 0);
+                $("#column8").backgroundColor('#5E9F59')
             });
             
             
             //**Ninth Column
             
             //**Fades out nith column, fades in number on mouseenter
-            $("#9rect").mouseenter(function() {
-                $("#9rect").fadeTo(1000, 0.4);
+            $("#column9").mouseenter(function() {
+                $("#column9").fadeTo(1000, 0.4);
                 $("#numbers9").fadeTo(1000, 1);
+                $("#column9").backgroundColor('#5E9F59')
             });
             //**Fades back ninth column, fades out number on exit
-            $("#9rect").mouseout(function() {
-                $("#9rect").fadeTo(1000, 1);
+            $("#column9").mouseout(function() {
+                $("#column9").fadeTo(1000, 1);
                 $("#numbers9").fadeTo(1000, 0);
+                $("#column9").backgroundColor('#5E9F59')
             });
             
             //**Tenth Column
             
             //**Fades out tenth column, fades in number on mouseenter
-            $("#10rect").mouseenter(function() {
-                $("#10rect").fadeTo(1000, 0.4);
+            $("#column10").mouseenter(function() {
+                $("#column10").fadeTo(1000, 0.4);
                 $("#numbers10").fadeTo(1000, 1);
+                $("#column10").backgroundColor('#5E9F59')
             });
             //**Fades back tenth column, fades out number on exit
-            $("#10rect").mouseout(function() {
-                $("#10rect").fadeTo(1000, 1);
+            $("#column10").mouseout(function() {
+                $("#column10").fadeTo(1000, 1);
                 $("#numbers10").fadeTo(1000, 0);
+                $("#column10").backgroundColor('#5E9F59')
             });
             
             //**Eleventh Column
             
             //**Fades out eleventh column, fades in number on mouseenter
-            $("#11rect").mouseenter(function() {
-                $("#11rect").fadeTo(1000, 0.4);
+            $("#column11").mouseenter(function() {
+                $("#column11").fadeTo(1000, 0.4);
                 $("#numbers11").fadeTo(1000, 1);
+                $("#column11").backgroundColor('#5E9F59')
             });
             //**Fades back eleventh column, fades out number on exit
-            $("#11rect").mouseout(function() {
-                $("#11rect").fadeTo(1000, 1);
+            $("#column11").mouseout(function() {
+                $("#column11").fadeTo(1000, 1);
                 $("#numbers11").fadeTo(1000, 0);
+                $("#column11").backgroundColor('#5E9F59')
             });
             
             //**Twelth Column
             
             //**Fades out first column, fades in number on mouseenter
-            $("#12rect").mouseenter(function() {
-                $("#12rect").fadeTo(1000, 0.4);
+            $("#column12").mouseenter(function() {
+                $("#column12").fadeTo(1000, 0.4);
                 $("#numbers12").fadeTo(1000, 1);
+                $("#column12").backgroundColor('#5E9F59')
             });
             //**Fades back first column, fades out number on exit
-            $("#12rect").mouseout(function() {
-                $("#12rect").fadeTo(1000, 1);
+            $("#column12").mouseout(function() {
+                $("#column12").fadeTo(1000, 1);
                 $("#numbers12").fadeTo(1000, 0);
+                $("#column12").backgroundColor('#5E9F59')
             });
             
             //**Thirteenth Column
             
             //**Fades out thirteenth column, fades in number on mouseenter
-            $("#13rect").mouseenter(function() {
-                $("#13rect").fadeTo(1000, 0.4);
+            $("#column13").mouseenter(function() {
+                $("#column13").fadeTo(1000, 0.4);
                 $("#numbers13").fadeTo(1000, 1);
+                $("#column13").backgroundColor('#5E9F59')
             });
             //**Fades back thirteenth column, fades out number on exit
-            $("#13rect").mouseout(function() {
-                $("#13rect").fadeTo(1000, 1);
+            $("#column13").mouseout(function() {
+                $("#column13").fadeTo(1000, 1);
                 $("#numbers13").fadeTo(1000, 0);
+                $("#column13").backgroundColor('#5E9F59')
             });
 
             
