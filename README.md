@@ -12,7 +12,7 @@ The code will look like this: '<rect x="187" y="283"...' Add ids counting up so 
 Click on the live preview button on the top right of Brackets, and click inspect. A window will open up. Click the top-left button which looks like an arrow on a screen. Click on the text box or line you want to fade in and out. The code where that element is will be shown on the right, in the new window. Find that same code in Brackets, using Command+f will help, and assign the element the desired id. Either '<g id="numbers1">' or '<g id="line1">'. 
   <br><br>
   Make sure paired lines and textboxes have a paired number in their id. In the example code, there is a paired line and textbox above columns two and four. Move the commands relating to the line and textbox to whichever column the box and line are above. Make sure to move  the commands in both mouseenter and mouseout.
-  <h4>To add a color change<h4>
+  <h4>To add a color change</h4>
     To add color changes, alter the hex codes on the backgroundColor command under mouseenter. It is currently set to Mustang News green, which is the default color for our graphs. The hexcode in mouseout reverts the color back to Mustang News green, if the color is changed. </p>
 <h3>State Funding Test</h3> Application of the interactive illustrator script on a graphic. Open in illustrator and live preview to see how it looks.
 <h3>audiotext.html</h3> Audio plays when text is clicked, instead of soundcloud embeds or audio players
