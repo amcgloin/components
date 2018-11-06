@@ -1,0 +1,19 @@
+<!---Defines an audio element to be referred to later---->
+<audio id="audio_3">
+	<source src="https://raw.githubusercontent.com/amcgloin/components/master/performance.mp3" type="audio/mpeg" />
+</audio>
+            
+
+<!---Sets initial picture and alt text---->
+<!---onmouseover changes the picture to grayscale or alternate photo when mouse hovers over photo--->
+<!---onmouseout changes the picture back to original photo when the mouse leaves photo--->
+<!--onClick plays the audio files when clicked-->
+<!--ondblclick pauses the audio file when doubleclicked-->
+      
+<img src="https://web.calpoly.edu/~amcgloin/img/Tony.jpg"
+alt="Tony is a construction management senior who learned entrepreneurship to help him lead a construction team;"         
+onmouseover="this.src='https://web.calpoly.edu/~amcgloin/img/Tony2.jpg;" 
+onmouseout="this.src='https://web.calpoly.edu/~amcgloin/img/Tony.jpg;"
+onClick="document.getElementById('audio_3').play(); return false;"
+ondblclick="document.getElementById('audio_3').pause(); return false;"/>
+	
